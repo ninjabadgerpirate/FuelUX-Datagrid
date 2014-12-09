@@ -1,0 +1,37 @@
+﻿@using Datagrid.Model
+
+<div class="row">
+    <div id="AlertMsg" class="alert alert-warning fade in" role="alert">
+        <span id="GridMsg"></span>
+    </div>
+</div>
+
+<div class="row">
+    <div id="MyRepeaterContainer">
+        @Html.Partial("_Datagrid", new DatagridViewModel { GridID = "GlobalEntityRepeater", GridTitle = "GlobalEntity Grid" })
+    </div>
+</div>
+
+<div class="row">
+    <div id="PolicyRepeaterContainer">
+
+    </div>
+</div>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body" id="ModalContentContainer">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
